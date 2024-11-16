@@ -1,6 +1,9 @@
-function Home() {
-  return <h1>Page d&apos;accueil</h1>;
+import Header from '../../components/Header/Header'
+
+export default function Home(){
+  return(
+    <div className='body-container'>
+        <Header/>
+    </div>
+  )
 }
-
-export default Home;
-
