@@ -3,7 +3,7 @@ import Home from "./Home/Home";
 import Housing from "./Housing/Housing";
 import NotFound from "./NotFound/NotFound";
 
-function Router() {
+const Router = () => {
   return (
     <BrowserRouter>
       <Routes>

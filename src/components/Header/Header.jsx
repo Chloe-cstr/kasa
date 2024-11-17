@@ -1,12 +1,10 @@
 import Logo from '../../assets/logo.png'
 import './Header.scss'
 
-export default function Header(){
+const Header = () => {
     return(
         <header className='header'>
-            <h1>
-                <img src={Logo} alt="Logo Kasa" className='header__logo'/>
-            </h1>
+            <img src={Logo} alt="Logo Kasa" className='header__logo'/>
             <nav className='header__nav'>
                 <ul className='header__nav__list'>
                     <li className='header__nav__item'>
@@ -18,5 +16,7 @@ export default function Header(){
                 </ul>
             </nav>
         </header>
-    )
-}
+    );
+};
+
+export default Header;
