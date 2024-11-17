@@ -1,4 +1,5 @@
-@import './abstracts/variables';
-@import './bases/base';
-@import './bases/reset';
+@use './abstracts/variables' as var;
+@use './bases/base';
+@use './bases/reset';
+@use './abstracts/mixin' as mixin;
 

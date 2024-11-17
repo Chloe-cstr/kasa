@@ -1,0 +1,14 @@
+@use '../../sass/abstracts/mixin';
+
+.footer{
+    background-color: black;
+    color: white;
+    @include mixin.flex-center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+    &__logo{
+        width: 100px;
+        height: auto;
+    }
+}

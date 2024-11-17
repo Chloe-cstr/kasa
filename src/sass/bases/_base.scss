@@ -1,8 +1,10 @@
+@use '../abstracts/variables' as var;
+
 body{
-    font-family: $text-font;
-    font-size: $size-text;
-    max-width: 1440px;
-    padding: 30px 100px;
+    font-family: var.$text-font;
+    font-size: var.$size-text;
+    max-width: 1800px;
+    padding-top: 30px;
     margin: 0 auto;
 }
 
