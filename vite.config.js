@@ -9,6 +9,7 @@ export default defineConfig({
       scss: {
         // Permet d'utiliser SCSS sans problème
         additionalData: '', // Ajoute des données globales si nécessaire
+        api: 'modern-compiler',
       },
     },
   },

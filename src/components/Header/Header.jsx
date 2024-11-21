@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Logo from '../../assets/logo.png'
 import './Header.scss'
 
@@ -8,10 +9,10 @@ const Header = () => {
             <nav className='header__nav'>
                 <ul className='header__nav__list'>
                     <li className='header__nav__item'>
-                        <a href="#">Accueil</a>
+                        <Link to ="/">Accueil</Link>
                     </li>
                     <li>
-                        <a href="#">A propos</a>
+                        <Link to ="/about">A propos</Link>
                     </li>
                 </ul>
             </nav>

@@ -1,0 +1,29 @@
+@use '../../sass/abstracts/variables';
+
+.collapse{
+    padding-right: 300px;
+    padding-left: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &__titleContent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: variables.$primary-color;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 15px 10px 20px;
+        &__arrowUp{
+            cursor: pointer;
+            font-size: 20px;
+        }
+        &__arrowDown{
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+    &__textContent{
+        background-color: variables.$background-color-secondary;
+        padding: 20px;
+    }
+}
