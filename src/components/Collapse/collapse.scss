@@ -16,10 +16,10 @@
         &__arrowUp{
             cursor: pointer;
             font-size: 20px;
+            transition: transform 0.3s ease;
         }
-        &__arrowDown{
-            cursor: pointer;
-            font-size: 20px;
+        &__arrowUp--active{
+            transform: rotate(-180deg);
         }
     }
     &__textContent{
