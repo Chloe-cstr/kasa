@@ -2,10 +2,17 @@
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    padding: 40px 150px; 
+    padding: 40px 150px;
+    @media (max-width: 768px) {
+        padding: 20px;   
+    }
     &__logo{
         width: 150px;
         height: auto;
+        @media (max-width: 768px){
+            width: 120px;
+            height: auto;
+        }
     }
     &__nav{
         &__list{
@@ -13,6 +20,14 @@
         }
         &__item{
             padding-right: 50px;
+            @media (max-width: 768px){
+                padding-right: 40px;
+            }
+            &__maj{
+                @media (max-width: 768px){
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 }

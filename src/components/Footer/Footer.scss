@@ -7,8 +7,16 @@
     flex-direction: column;
     gap: 40px;
     padding: 40px 0;
+    @media (max-width: 768px){
+        height: 240px;
+        gap: 10px;
+    }
     &__logo{
         width: 100px;
         height: auto;
+    }
+    &__text{
+        padding: 0 100px;
+        text-align: center;
     }
 }

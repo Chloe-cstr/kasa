@@ -6,6 +6,13 @@
     gap: 50px;
     background-color: #F6F6F6;
     border-radius: 30px;
+    @media (max-width: 768px){
+        background-color: white;
+        margin: 0;
+        padding: 20px;
+        justify-content: center;
+        gap: 20px;
+    }
     .card{
         position: relative;
         &__image{
@@ -13,6 +20,9 @@
             height: 300px;
             object-fit: cover;
             border-radius: 10px;
+            @media (max-width: 768px){
+                height: 250px;
+            }
         }
         &__title{
             position: absolute;
