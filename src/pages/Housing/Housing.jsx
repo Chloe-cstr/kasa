@@ -13,11 +13,11 @@ function Housing() {
     return <p>Logement non trouvé. Vérifiez URL.</p>;
   }
 
-  return(
-    <div className='body-container'>
-      <Header/>
-      <Slider images={housingData.pictures}/>
-      <Footer/>
+  return (
+    <div className="body-container">
+      <Header />
+      <Slider images={housingData.pictures} />
+      <Footer />
     </div>
   );
 }

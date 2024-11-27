@@ -1,42 +1,42 @@
-.cards{
-    margin: 50px 150px;
-    padding: 40px calc((100% - ((400px * 3) + (50px * (3 - 1)))) / 2);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    background-color: #F6F6F6;
-    border-radius: 30px;
-    @media (max-width: 768px){
-        background-color: white;
-        margin: 0;
-        padding: 20px;
-        justify-content: center;
-        gap: 20px;
+.cards {
+  margin: 50px 150px;
+  padding: 40px calc((100% - ((400px * 3) + (50px * (3 - 1)))) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  background-color: #f6f6f6;
+  border-radius: 30px;
+  @media (max-width: 768px) {
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .card {
+    position: relative;
+    &__image {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      @media (max-width: 768px) {
+        height: 250px;
+      }
     }
-    .card{
-        position: relative;
-        &__image{
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            @media (max-width: 768px){
-                height: 250px;
-            }
-        }
-        &__title{
-            position: absolute;
-            bottom: 7px;
-            left: 10px;
-            font-size: 10px;
-            color: white;
-            height: 50px; /* Hauteur fixe de la zone du titre */
-            display: flex;
-            align-items: flex-start; /* Assure que le texte commence en haut */
-            overflow: hidden; /* Coupe le texte si nécessaire */
-            text-align: left; 
-            width: 70%;
-            white-space: normal;  
-        }
+    &__title {
+      position: absolute;
+      bottom: 7px;
+      left: 10px;
+      font-size: 10px;
+      color: white;
+      height: 50px; /* Hauteur fixe de la zone du titre */
+      display: flex;
+      align-items: flex-start; /* Assure que le texte commence en haut */
+      overflow: hidden; /* Coupe le texte si nécessaire */
+      text-align: left;
+      width: 70%;
+      white-space: normal;
     }
+  }
 }

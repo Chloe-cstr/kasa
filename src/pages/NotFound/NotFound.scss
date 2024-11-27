@@ -1,21 +1,21 @@
 @use '../../sass/abstracts/variables';
 
-.notFound{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    padding-bottom: 60px;
-    &__title{
-        color: variables.$primary-color;
-        font-size: 250px;
-    }
-    &__text{
-        color: variables.$primary-color;
-        font-size: 25px;
-    }
-    &__link{
-        text-decoration: underline;
-    }
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding-bottom: 60px;
+  &__title {
+    color: variables.$primary-color;
+    font-size: 250px;
+  }
+  &__text {
+    color: variables.$primary-color;
+    font-size: 25px;
+  }
+  &__link {
+    text-decoration: underline;
+  }
 }
