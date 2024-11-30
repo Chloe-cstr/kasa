@@ -1,0 +1,68 @@
+@use '../../sass/abstracts/variables';
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 150px;
+  &__content {
+    width: 50%;
+    &__title {
+      color: variables.$primary-color;
+      font-size: variables.$size-title;
+      font-weight: 500;
+    }
+    &__location {
+      font-size: 15px;
+    }
+  }
+  &__host {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    &__name {
+      color: variables.$primary-color;
+      width: 15%;
+      text-align: right;
+    }
+    &__image {
+      width: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}
+
+.infos {
+  padding: 0 150px;
+  display: flex;
+  &__tag {
+    width: 50%;
+  }
+  &__rating {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.infoSup {
+  display: flex;
+  gap: 80px;
+  padding: 0 150px;
+  &__description {
+    width: 50%;
+    .collapse {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  &__equipment {
+    width: 50%;
+    .collapse {
+      padding: 0;
+      width: 100%;
+    }
+  }
+}

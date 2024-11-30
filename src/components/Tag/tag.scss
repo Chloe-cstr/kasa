@@ -1,0 +1,15 @@
+@use '../../sass/abstracts/variables';
+
+.tag {
+  background-color: variables.$primary-color;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-right: 10px;
+  width: 150px;
+  text-align: center;
+  &__title {
+    color: white;
+  }
+}
