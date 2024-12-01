@@ -25,33 +25,43 @@ function Housing() {
     <div className="body-container">
       <Header />
       <Slider images={housingData.pictures} />
+
       <div className="info">
         <div className="info__content">
-          <h2 className="info__content__title">{housingData.title}</h2>
-          <p className="info__content__location">{housingData.location}</p>
+          <div className="info__content__title">
+            <h2 className="info__content__title__description">
+              {housingData.title}
+            </h2>
+            <p className="info__content__title__location">
+              {housingData.location}
+            </p>
+          </div>
+          <div className="info__content__tag">
+            {tagData.map((item, index) => (
+              <Tag key={index} text={item} />
+            ))}
+          </div>
         </div>
-        <div className="info__host">
-          <p className="info__host__name">{hostData.name}</p>
-          <img src={hostData.picture} className="info__host__image" />
+
+        <div className="info__element">
+          <div className="info__element__host">
+            <p className="info__element__host__name">{hostData.name}</p>
+            <img
+              src={hostData.picture}
+              className="info__element__host__image"
+            />
+          </div>
+          <div className="info__element__rating">
+            <Rating rating={ratingData} />
+          </div>
         </div>
       </div>
 
       <div className="infos">
-        <div className="infos__tag">
-          {tagData.map((item, index) => (
-            <Tag key={index} text={item} />
-          ))}
-        </div>
-        <div className="infos__rating">
-          <Rating rating={ratingData} />
-        </div>
-      </div>
-
-      <div className="infoSup">
-        <div className="infoSup__description">
+        <div className="infos__description">
           <Collapse title="Description" content={housingData.description} />
         </div>
-        <div className="infoSup__equipment">
+        <div className="infos__equipment">
           <Collapse
             title="Équipements"
             content={housingData.equipments.map((equipment, index) => (

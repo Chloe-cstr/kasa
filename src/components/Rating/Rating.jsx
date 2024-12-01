@@ -1,6 +1,7 @@
 import greyStar from '../../assets/grey_star.png';
 import redStar from '../../assets/red_star.png';
 import PropTypes from 'prop-types';
+import './rating.scss';
 
 const Rating = ({ rating }) => {
   return (
@@ -12,6 +13,7 @@ const Rating = ({ rating }) => {
             key={index}
             src={ratingValue <= rating ? redStar : greyStar}
             alt="star"
+            className="rating"
           />
         );
       })}

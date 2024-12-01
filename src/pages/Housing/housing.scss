@@ -2,67 +2,122 @@
 
 .info {
   display: flex;
-  align-items: flex-start;
   padding: 15px 150px;
+  @media (max-width: 768px) {
+    padding: 0 20px;
+    flex-direction: column;
+  }
   &__content {
     width: 50%;
-    &__title {
-      color: variables.$primary-color;
-      font-size: variables.$size-title;
-      font-weight: 500;
+    @media (max-width: 768px) {
+      width: 100%;
     }
-    &__location {
-      font-size: 15px;
+    &__title {
+      &__description {
+        color: variables.$primary-color;
+        font-size: variables.$size-title;
+        font-weight: 500;
+        @media (max-width: 768px) {
+          font-size: 25px;
+          padding-bottom: 10px;
+        }
+      }
+      &__location {
+        font-size: 15px;
+        padding-bottom: 20px;
+      }
+    }
+    &__tag {
+      @media (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
     }
   }
-  &__host {
+  &__element {
     width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    &__name {
-      color: variables.$primary-color;
-      width: 15%;
-      text-align: right;
+    flex-direction: column;
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding-top: 20px;
     }
-    &__image {
-      width: 80px;
-      border-radius: 50%;
-      object-fit: cover;
+    &__host {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      gap: 10px;
+      @media (max-width: 768px) {
+        gap: 5px;
+      }
+      &__name {
+        color: variables.$primary-color;
+        width: 15%;
+        text-align: right;
+        @media (max-width: 768px) {
+          width: 50%;
+        }
+      }
+      &__image {
+        width: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        @media (max-width: 768px) {
+          width: 60px;
+        }
+      }
+    }
+    &__rating {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      @media (max-width: 768px) {
+        width: 100%;
+        justify-content: flex-start;
+      }
     }
   }
 }
 
 .infos {
-  padding: 0 150px;
-  display: flex;
-  &__tag {
-    width: 50%;
-  }
-  &__rating {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-.infoSup {
   display: flex;
   gap: 80px;
   padding: 0 150px;
+  @media (max-width: 768px) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
   &__description {
     width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     .collapse {
       width: 100%;
       padding: 0;
+      @media (max-width: 768px) {
+        margin: 10px 0;
+      }
     }
   }
   &__equipment {
     width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     .collapse {
       padding: 0;
       width: 100%;
+      @media (max-width: 768px) {
+        margin: 10px 0;
+      }
     }
   }
 }
