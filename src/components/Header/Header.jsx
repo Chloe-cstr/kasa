@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import './Header.scss';
 
@@ -9,14 +9,24 @@ const Header = () => {
       <nav className="header__nav">
         <ul className="header__nav__list">
           <li className="header__nav__item">
-            <Link to="/" className="header__nav__item__maj">
-              Accueil
-            </Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "header__nav__item__maj active" : "header__nav__item__maj"
+            }
+          >
+            Accueil
+          </NavLink>
           </li>
           <li>
-            <Link to="/about" className="header__nav__item__maj">
-              A propos
-            </Link>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "header__nav__item__maj active" : "header__nav__item__maj"
+            }
+          >
+            A propos
+          </NavLink>
           </li>
         </ul>
       </nav>

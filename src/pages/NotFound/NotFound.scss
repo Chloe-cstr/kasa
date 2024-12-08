@@ -7,13 +7,27 @@
   align-items: center;
   gap: 70px;
   padding-bottom: 60px;
+  @media (max-width: 1500px) {
+    height: 75vh;
+  }
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+    height: 65vh;
+  }
   &__title {
     color: variables.$primary-color;
     font-size: 250px;
+    @media (max-width: 768px) {
+      font-size: 100px;
+    }
   }
   &__text {
     color: variables.$primary-color;
     font-size: 25px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+      text-align: center;
+    }
   }
   &__link {
     text-decoration: underline;

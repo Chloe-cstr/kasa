@@ -3,6 +3,7 @@ import Footer from '../../components/Footer/Footer';
 import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse';
 import AboutImage from '../../assets/image_about.png';
+import './about.scss';
 
 const About = () => {
   const aboutData = [

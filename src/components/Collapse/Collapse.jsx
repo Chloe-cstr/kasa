@@ -32,7 +32,7 @@ const Collapse = ({ title, content }) => {
 
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
+  content: PropTypes.node.isRequired,
 };
 
 export default Collapse;

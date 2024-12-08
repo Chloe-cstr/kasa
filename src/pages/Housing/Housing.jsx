@@ -13,9 +13,9 @@ function Housing() {
   const { id } = useParams(); // Récupération de l'id depuis l'URL
   console.log("ID récupéré depuis l'URL :", id);
   const housingData = data.find((housing) => housing.id === id);
-  const hostData = housingData.host;
-  const tagData = housingData.tags;
-  const ratingData = housingData.rating;
+  const hostData = housingData?.host;
+  const tagData = housingData?.tags;
+  const ratingData = housingData?.rating;
 
   if (!housingData) {
     return <Navigate to="*" />;

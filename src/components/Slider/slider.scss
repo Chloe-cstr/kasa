@@ -45,5 +45,8 @@
     left: 50%;
     transform: translateX(-50%);
     color: white;
+    @media (max-width: 768px){
+      display: none;
+    }
   }
 }

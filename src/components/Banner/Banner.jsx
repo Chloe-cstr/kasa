@@ -14,7 +14,7 @@ const Banner = ({ image, text, className }) => {
 
 Banner.propTypes = {
   image: PropTypes.string.isRequired,
-  text: PropTypes.string,
+  text: PropTypes.node,
   className: PropTypes.string.isRequired,
 };
 
