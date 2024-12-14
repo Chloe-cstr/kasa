@@ -10,7 +10,7 @@ import { Navigate } from 'react-router-dom';
 import './housing.scss';
 
 function Housing() {
-  const { id } = useParams(); // Récupération de l'id depuis l'URL
+  const { id } = useParams(); 
   console.log("ID récupéré depuis l'URL :", id);
   const housingData = data.find((housing) => housing.id === id);
   const hostData = housingData?.host;
