@@ -6,7 +6,7 @@ import './rating.scss';
 const Rating = ({ rating }) => {
   return (
     <div>
-      {[...Array(5)].map((star, index) => {
+      {[...Array(5)].map((_, index) => {
         const ratingValue = index + 1;
         return (
           <img

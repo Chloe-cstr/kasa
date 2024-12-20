@@ -8,7 +8,9 @@ const Card = () => {
       {data.map((item, index) => (
         <Link key={item.id} to={`/housing/${item.id}`}>
           <div className="card" key={index}>
-            <img src={item.cover} alt={item.title} className="card__image" />
+            <div className='card__image'>
+              <img src={item.cover} alt={item.title} className="card__image__overlay" />
+            </div>
             <div className="card__title">
               <h2 className="card__title__textContent">{item.title}</h2>
             </div>
